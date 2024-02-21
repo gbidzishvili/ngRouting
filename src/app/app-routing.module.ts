@@ -10,20 +10,13 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+    pathMatch: 'full',
   },
   {
     path: 'contact',
     component: ContactComponent,
   },
-  {
-    path: 'gallery',
-    component: GalleryComponent,
-  },
-  { path: 'gallery-inner/:id/:id', component: GalleryInnerComponent },
-  {
-    path: 'about-us',
-    component: AboutUsComponent,
-  },
+  { path: 'about-us', component: AboutUsComponent },
 ];
 
 @NgModule({
